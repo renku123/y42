@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="250" viewBox="0 0 375 250">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.8;
+      }
+
+      .cls-2 {
+        fill: rgba(191,212,229,0.15);
+      }
+
+      .cls-3 {
+        fill: rgba(120,155,184,0.15);
+      }
+    </style>
+  </defs>
+  <g id="Group_4" data-name="Group 4" class="cls-1" transform="translate(-86 -194)">
+    <path id="Path_37" data-name="Path 37" class="cls-2" d="M211,444V319H336A124.977,124.977,0,0,1,211,444Z"/>
+    <path id="Path_38" data-name="Path 38" class="cls-3" d="M211,319V194H336A124.977,124.977,0,0,1,211,319Z"/>
+    <path id="Path_39" data-name="Path 39" class="cls-2" d="M461,319H336V194A124.977,124.977,0,0,1,461,319Z"/>
+    <path id="Path_40" data-name="Path 40" class="cls-3" d="M211,444V319H86A124.977,124.977,0,0,0,211,444Z"/>
+    <path id="Path_41" data-name="Path 41" class="cls-2" d="M86,319H211V194A124.977,124.977,0,0,0,86,319Z"/>
+  </g>
+</svg>
