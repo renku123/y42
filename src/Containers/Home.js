@@ -1,10 +1,8 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 
-
 import Grid from '../Components/Grid'
 import Button from '../Components/Button'
-
 
 import close from './../assets/img/Close.svg'
 import cardBack from './../assets/img/cardBack.svg'
@@ -492,15 +490,15 @@ function Home() {
               </div>
               <div className={classes.categoriesTitle}>Categories Tags</div>
               <Grid container marginB={24}>
-                <Grid >
+                <Grid container>
                   <div className={classes.tag}>
                   Customer Experience
                   </div>
                 </Grid>
                 <Grid container marginT={12}>
-                  <Grid xs={4} className={classes.integration} >Integration</Grid>
-                  <Grid xs={3} className={classes.testing} >Testing</Grid>
-                  <Grid xs={2} className={classes.wow} >Wow</Grid>
+                  <Grid xs={4} sm={4} md={4} lg={4} xl={4} className={classes.integration}>Integration</Grid>
+                  <Grid xs={4} sm={3} md={3} lg={3} xl={3} className={classes.testing}>Testing</Grid>
+                  <Grid xs={4} sm={4} md={3} lg={3} xl={3} className={classes.wow}>Wow</Grid>
                 </Grid>
               </Grid>
             </Grid>
