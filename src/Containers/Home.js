@@ -13,11 +13,12 @@ import img1 from './../assets/img/image 5.png'
 import img2 from './../assets/img/image 6.png'
 import back from './../assets/img/back.png'
 
-function Home(props) {
+function Home() {
   const useStyles = makeStyles((theme) => ({
     body: {
       margin: 0
     },
+
     background: {
       padding: '120px 0px',
       backgroundColor: '#989898',
@@ -25,7 +26,11 @@ function Home(props) {
       [theme.breakpoints.down('lg')]: {
         padding: '60px 30px',
       },
+      [theme.breakpoints.down('xs')]: {
+        padding: '30px 16px',
+      },
     },
+
     mainContainer: {
       padding: '30px 62px',
       width: '1270px',
@@ -40,6 +45,7 @@ function Home(props) {
         width: '100%',
       },
     },
+
     title: {
       fontWeight: 700,
       fontSize: 25,
@@ -57,6 +63,7 @@ function Home(props) {
         fontSize: 20,
       },
     },
+
     demoCard: {
       padding: '32px 42px',
       backgroundColor: '#0D2B4A',
@@ -73,6 +80,7 @@ function Home(props) {
         padding: '16px',
       },
     },
+
     topInfo: {
       marginLeft: 38,
       marginRight: 20,
@@ -86,6 +94,7 @@ function Home(props) {
         marginTop: 16
       },
     },
+
     cardTitle: {
       fontWeight: 700,
       fontSize: 25,
@@ -100,6 +109,7 @@ function Home(props) {
         fontSize: 20,
       },
     },
+
     extraInfo: {
       [theme.breakpoints.down('sm')]: {
         marginTop: 24
@@ -115,6 +125,7 @@ function Home(props) {
       lineHeight: '22px',
       color: '#FFFFFF'
     },
+
     extraInfoTitle: {
       fontWeight: 700,
       fontSize: 16,
@@ -123,6 +134,7 @@ function Home(props) {
       lineHeight: '20px',
       color: '#A1C0DC'
     },
+
     extraInfoSub: {
       marginTop: 13,
       fontWeight: 400,
@@ -161,6 +173,7 @@ function Home(props) {
         fontSize: 20,
       },
     },
+
     detailsText: {
       marginTop: 16,
       fontWeight: 400,
@@ -178,6 +191,10 @@ function Home(props) {
       [theme.breakpoints.down('md')]: {
         marginTop: 24,
         padding: '32px 24px',
+      },
+      [theme.breakpoints.down('xs')]: {
+        marginTop: 24,
+        padding: '32px 16px',
       },
     },
 
@@ -216,8 +233,10 @@ function Home(props) {
       fontFamily: 'Roboto, sans-serif',
       fontStyle: 'normal',
       lineHeight: '22px',
-      color: '#000000'
+      color: '#000000',
+      maxWidth: 160
     },
+
     wow: {
       backgroundColor: '#E4E9ED',
       borderRadius: 5,
@@ -229,11 +248,18 @@ function Home(props) {
       lineHeight: '22px',
       color: '#000000',
       marginLeft: 12,
+      maxWidth: 70,
+      textAlign: 'center',
       [theme.breakpoints.down('xs')]: {
         marginLeft: 0,
-        marginTop: 12
+        marginTop: 12,
+      },
+      [theme.breakpoints.up('lg')]: {
+        marginLeft: 0,
+        marginTop: 12,
       },
     },
+
     testing: {
       backgroundColor: '#E4E9ED',
       borderRadius: 5,
@@ -245,10 +271,22 @@ function Home(props) {
       lineHeight: '22px',
       color: '#000000',
       marginLeft: 12,
-      [theme.breakpoints.down('xs')]: {
-        marginLeft: 8,
-        marginRight: 8,
-      },
+      maxWidth: 100,
+      textAlign: 'center'
+    },
+
+    integration: {
+      backgroundColor: '#E4E9ED',
+      borderRadius: 5,
+      padding: '8px 16px',
+      fontWeight: 400,
+      fontSize: 16,
+      fontFamily: 'Roboto, sans-serif',
+      fontStyle: 'normal',
+      lineHeight: '22px',
+      color: '#000000',
+      maxWidth: 100,
+      textAlign: 'center'
     },
 
     tabsContainer: {
@@ -267,6 +305,7 @@ function Home(props) {
       lineHeight: '19.54px',
       color: '#969696'
     },
+
     details: {
       marginLeft: 22,
       padding: '9px 28px',
@@ -279,6 +318,7 @@ function Home(props) {
       backgroundColor: '#E8E8E8',
       borderRadius: 5
     },
+
     imgContainer1: {
       padding: '8px 10px',
       backgroundColor: '#e4e9ede6',
@@ -313,24 +353,32 @@ function Home(props) {
       [theme.breakpoints.only('sm')]: {
         width: 250,
       },
+      [theme.breakpoints.only('xs')]: {
+        width: 220,
+      },
     },
+
     shopifyLogo: {
       alignSelf: 'flex-start'
     },
+
     contImages: {
       marginTop: 50,
       [theme.breakpoints.down('sm')]: {
         marginTop: 20,
       },
     },
+
     spaceXS: {
       [theme.breakpoints.down('xs')]: {
         marginTop: 30
       },
     },
+
     imagePoz: {
       verticalAlign: 'text-top'
     },
+
     additionalContainer: {
       marginTop: 64,
       [theme.breakpoints.down('sm')]: {
@@ -450,9 +498,9 @@ function Home(props) {
                   </div>
                 </Grid>
                 <Grid container marginT={12}>
-                  <Grid className={classes.tag} >Integration</Grid>
-                  <Grid className={classes.testing} >Testing</Grid>
-                  <Grid className={classes.wow} >Wow</Grid>
+                  <Grid xs={4} className={classes.integration} >Integration</Grid>
+                  <Grid xs={3} className={classes.testing} >Testing</Grid>
+                  <Grid xs={2} className={classes.wow} >Wow</Grid>
                 </Grid>
               </Grid>
             </Grid>
